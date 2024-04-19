@@ -1,0 +1,15 @@
+{
+  "name": "pw-automation",
+  "version": "1.0.0",
+  "description": "automating with PW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.43.1",
+    "prettier": "^3.2.5"
+  }
+}
