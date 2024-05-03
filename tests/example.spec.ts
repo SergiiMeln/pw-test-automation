@@ -51,3 +51,19 @@ test ("Assertions", async ({page}) => {
     const nonExistingElement = page.locator("h5")
     await expect(nonExistingElement).not.toBeVisible()
 })
+
+
+// Test Suit
+test.describe.only("My Test Suit", ()=> {
+    test ("Test One", async ({page}) => {
+        console.log("Fist Test Runs")
+    })
+
+    test ("Test Two", async ({page}) => {
+        console.log("Second Test Runs")
+    })
+
+    test ("Test Three", async ({page}) => {
+        console.log("Theard Test Runs")
+    })
+})
