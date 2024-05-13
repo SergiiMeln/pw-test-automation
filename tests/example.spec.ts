@@ -1,4 +1,5 @@
 import {test, expect} from '@playwright/test'
+import {loadHomePage, assertTitle} from "../helpers"
 
 test ("Simple basic test", async ({page}) => {
     await page.goto("https://www.example.com", {waitUntil: "domcontentloaded"});
@@ -54,7 +55,7 @@ test ("Assertions", async ({page}) => {
 
 
 // Test Suit
-test.describe.only("My Test Suit", ()=> {
+test.describe("My Test Suit", ()=> {
     test ("Test One", async ({page}) => {
         console.log("Fist Test Runs")
     })
@@ -66,4 +67,10 @@ test.describe.only("My Test Suit", ()=> {
     test ("Test Three", async ({page}) => {
         console.log("Theard Test Runs")
     })
+})
+
+// Using helpers
+test.only ("Use helpers function", async ({page}) => {
+    await loadHomePage(page);
+    await assertTitle(page);
 })
