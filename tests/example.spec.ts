@@ -70,7 +70,7 @@ test.describe("My Test Suit", ()=> {
 })
 
 // Using helpers
-test("Use helpers function", async ({page}) => {
+test.only("Use helpers function", async ({page}) => {
     await loadHomePage(page);
     await assertTitle(page);
 })

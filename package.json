@@ -4,7 +4,8 @@
   "description": "automating with PW",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:chrome": "playwright test --config=playwright.config.ts --project=chromium",
+    "test:firefox": "playwright test --config=playwright.config.ts --project=firefox"
   },
   "author": "",
   "license": "ISC",
