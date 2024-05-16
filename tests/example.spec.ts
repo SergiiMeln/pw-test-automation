@@ -72,5 +72,6 @@ test.describe("My Test Suit", ()=> {
 // Using helpers
 test.only("Use helpers function", async ({page}) => {
     await loadHomePage(page);
+    // await page.pause(); opens debbuging window
     await assertTitle(page);
 })

@@ -6,10 +6,10 @@ const config: PlaywrightTestConfig = {
     use: {
         headless: false,
         viewport: {width: 1280, height: 720},
-        actionTimeout: 15000, // ms for PW functions before it errors(click, type, waitForSelector)
+        actionTimeout: 10000, // ms for PW functions before it errors(click, type, waitForSelector)
         ignoreHTTPSErrors: true,
         video: "off",
-        screenshot: "off"
+        screenshot: "only-on-failure"
     },
     projects: [
         {
