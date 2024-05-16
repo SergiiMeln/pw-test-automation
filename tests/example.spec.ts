@@ -54,8 +54,8 @@ test ("Assertions", async ({page}) => {
 })
 
 
-// Test Suit
-test.describe("My Test Suit", ()=> {
+// Test Suit. Add parallel to run all tests
+test.describe.parallel.only("My Test Suit", ()=> {
     test ("Test One", async ({page}) => {
         console.log("Fist Test Runs")
     })
@@ -70,7 +70,7 @@ test.describe("My Test Suit", ()=> {
 })
 
 // Using helpers
-test.only("Use helpers function", async ({page}) => {
+test("Use helpers function", async ({page}) => {
     await loadHomePage(page);
     // await page.pause(); opens debbuging window
     await assertTitle(page);

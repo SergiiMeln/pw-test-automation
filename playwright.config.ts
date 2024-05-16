@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
         actionTimeout: 10000, // ms for PW functions before it errors(click, type, waitForSelector)
         ignoreHTTPSErrors: true,
         video: "off",
-        screenshot: "only-on-failure"
+        screenshot: "off"
     },
     projects: [
         {
