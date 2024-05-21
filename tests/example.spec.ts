@@ -56,6 +56,7 @@ test ("Assertions", async ({page}) => {
 
 // Test Suit. Add parallel to run all tests
 test.describe.parallel.only("My Test Suit", ()=> {
+    
     test ("Test One", async ({page}) => {
         console.log("Fist Test Runs")
     })

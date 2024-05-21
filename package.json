@@ -6,7 +6,8 @@
   "scripts": {
     "test:chrome": "playwright test --config=playwright.config.ts --project=chromium",
     "test:firefox": "playwright test --config=playwright.config.ts --project=firefox",
-    "test:webkit": "playwright test --config=playwright.config.ts --project=webkit"
+    "test:webkit": "playwright test --config=playwright.config.ts --project=webkit",
+    "test:e2e": "playwright test --config=e2e.config.ts --project=chromium"
   },
   "author": "",
   "license": "ISC",
