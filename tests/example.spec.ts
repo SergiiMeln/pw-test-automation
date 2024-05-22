@@ -35,7 +35,7 @@ test ("Working with inputs", async ({page}) => {
     await page.fill("#user_password", "Babba")
     await page.click("text=Sign in")
     
-    const errorMessage = await page.locator(".alert-error")
+    const errorMessage = page.locator(".alert-error")
     await expect(errorMessage).toContainText("Login and/or password are wrong")
 })
 
@@ -45,7 +45,7 @@ test ("Assertions", async ({page}) => {
     await expect(page).toHaveURL('https://example.com')
     await expect(page).toHaveTitle("Example Domain")
 
-    const element = await page.locator('h1')
+    const element = page.locator('h1')
     await expect(element).toBeVisible()
     await expect(element).toHaveText("Example Domain")
     await expect(element).toHaveCount(1)
