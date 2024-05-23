@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test.describe.only("Login | Logout flow", () => {
+test.describe("Login | Logout flow", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("http://zero.webappsecurity.com/index.html");
     await page.locator("#signin_button").click();
