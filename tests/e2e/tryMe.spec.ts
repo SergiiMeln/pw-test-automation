@@ -1,8 +1,8 @@
 import {test, expect} from "@playwright/test"
 
-test.describe("TryMe test suit", ()=> {
+test.describe("TryMe Test Suit", ()=> {
     
-    test("First @Smoke", async ({page}) => {
+    test("First", {tag:"@Smoke"}, async ({page}) => {
         console.log("Fist test runs");
     })
 
@@ -10,7 +10,7 @@ test.describe("TryMe test suit", ()=> {
         console.log("Second test runs");
     })
 
-    test("Third @Smoke @Regression", async ({page}) => {
+    test("Third", async ({page}) => {
         console.log("Third test runs");
     })
 
@@ -18,7 +18,7 @@ test.describe("TryMe test suit", ()=> {
         console.log("Forth test runs");
     })
 
-    test("Fifth @Smoke", async ({page}) => {
+    test("Fifth", async ({page}) => {
         console.log("Fifth test runs");
     })
 })
