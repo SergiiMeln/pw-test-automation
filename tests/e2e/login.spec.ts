@@ -1,12 +1,12 @@
 import { test, expect } from "@playwright/test";
 
-test.describe("Login | Logout flow", () => {
+test.describe("Login Test Suit", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("http://zero.webappsecurity.com/index.html");
     await page.locator("#signin_button").click();
   });
 
-  test("Login/Logout Test", async ({ page }) => {
+  test("Login/Logout Test", {tag:"@Smoke"}, async ({ page }) => {
     await page.locator("#user_login").fill("username")
     await page.locator("#user_password").fill("password")
     await page.getByText("Sign in").click()
