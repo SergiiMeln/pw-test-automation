@@ -25,4 +25,8 @@ test.describe("TryMe Test Suit", ()=> {
     test("Sixth", async ({page}) => {
         console.log("Sixth test runs");
     })
+
+    test("Seven", async ({page}) => {
+        console.log("Seven test runs");
+    })
 })
