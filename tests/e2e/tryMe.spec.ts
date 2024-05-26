@@ -17,20 +17,4 @@ test.describe("TryMe Test Suit", ()=> {
     test("Forth", async ({page}) => {
         console.log("Forth test runs");
     })
-
-    test("Fifth", async ({page}) => {
-        console.log("Fifth test runs");
-    })
-
-    test("Sixth", async ({page}) => {
-        console.log("Sixth test runs");
-    })
-
-    test("Seven", async ({page}) => {
-        console.log("Seven test runs");
-    })
-    
-    test("Eight", async ({page}) => {
-        console.log("Eight test runs");
-    })
 })
