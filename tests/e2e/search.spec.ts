@@ -1,6 +1,6 @@
 import {test, expect, Locator} from "@playwright/test"
 
-test.describe.only("Search Test Suit", ()=> {
+test.describe("Search Test Suit", ()=> {
     let searchField: Locator;
 
     test.beforeEach(async ({page})=> {
