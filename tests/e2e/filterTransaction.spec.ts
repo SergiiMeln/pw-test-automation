@@ -9,7 +9,6 @@ test.describe.only("Filter Account Transactions", ()=> {
         await page.getByText("Sign in").click()
         await page.goto("http://zero.webappsecurity.com", {waitUntil:"domcontentloaded"})
         await page.click("#account_activity_link");
-        await page.waitForTimeout(3000)
     })
 
 
