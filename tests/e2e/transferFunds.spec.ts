@@ -1,6 +1,7 @@
 import {test, expect, Locator} from "@playwright/test"
 
 test.describe.only("Transfer Funds Test Suit", ()=> {
+
     test.beforeEach(async ({page})=> {
         await page.goto("http://zero.webappsecurity.com/index.html", {waitUntil:"domcontentloaded"});
         await page.locator("#signin_button").click();
@@ -9,7 +10,6 @@ test.describe.only("Transfer Funds Test Suit", ()=> {
         await page.getByText("Sign in").click()
         await page.goto("http://zero.webappsecurity.com", {waitUntil:"domcontentloaded"})
     })
-
 
     test("Transfer from Checking to Loan", {tag:"@Smoke"}, async ({page})=> {
         await page.locator("#onlineBankingMenu").click();
