@@ -1,7 +1,6 @@
 import {test, expect, Locator} from "@playwright/test"
 
 test.describe.only("Transfer Funds Test Suit", ()=> {
-
     test.beforeEach(async ({page})=> {
         await page.goto("http://zero.webappsecurity.com/index.html", {waitUntil:"domcontentloaded"});
         await page.locator("#signin_button").click();
