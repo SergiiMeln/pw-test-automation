@@ -10,7 +10,6 @@ test.describe.only("Transfer Funds Test Suit", ()=> {
         await page.goto("http://zero.webappsecurity.com", {waitUntil:"domcontentloaded"})
     })
 
-
     test("Transfer from Checking to Loan", {tag:"@Smoke"}, async ({page})=> {
         await page.locator("#onlineBankingMenu").click();
         await page.locator("#transfer_funds_link").click();
